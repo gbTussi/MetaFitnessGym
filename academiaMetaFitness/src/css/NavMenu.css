@@ -1,0 +1,112 @@
+/* Estilos padrão para telas grandes */
+.nav-menu {
+    background-color: #D32A23;
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens dentro do contêiner */
+    padding: 0 23px; /* Espaçamento lateral */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
+  }
+  
+  img {
+    width: 150px;
+    height: auto;
+    margin-right: 240px; /* Aumenta o espaçamento entre a imagem e o menu */
+  }
+  
+  .nav-list {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Alinha itens em linha */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margin padrão */
+    align-items: center; /* Alinha os itens da lista verticalmente */
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+  
+  .nav-item {
+    margin-right: 40px; /* Ajusta o espaçamento entre os itens */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove sublinhado */
+    color: #fff; /* Define a cor do texto branco para contraste */
+  }
+  
+  .nav-link:hover {
+    text-decoration-line: underline;
+  }
+  
+  .social-media {
+    display: flex; /* Alinha os ícones sociais em linha */
+    margin-left: auto; /* Empurra os ícones para o final do contêiner .nav-menu */
+    list-style-type: none;
+    align-items: center; /* Alinha os ícones sociais verticalmente */
+  }
+  
+  .social-item {
+    margin-left: 20px; /* Espaçamento entre os ícones sociais */
+    margin-top: 8px; /* Ajusta a posição vertical dos ícones sociais */
+  }
+  
+  .social-item a {
+    color: white; /* Define a cor dos ícones sociais como branca */
+    text-decoration: none; /* Remove a decoração do link */
+  }
+  
+  .social-item a:hover {
+    color: #f0f0f0; /* Altera a cor do ícone ao passar o mouse, se desejado */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column; /* Alinha itens verticalmente em telas menores */
+      height: auto; /* Ajusta a altura do contêiner */
+      padding: 10px; /* Adiciona espaçamento interno */
+    }
+  
+    .img-holder {
+      display: flex;
+      justify-content: center; /* Centraliza a imagem horizontalmente */
+      margin-bottom: 20px; /* Espaçamento inferior para separar da lista */
+    }
+  
+    .nav-list {
+      flex-direction: column; /* Empilha os itens verticalmente */
+      align-items: center; /* Centraliza os itens horizontalmente */
+      margin: 0; /* Remove margin vertical para empilhar itens */
+    }
+  
+    .nav-item {
+      margin: 10px 0; /* Adiciona espaçamento vertical entre itens */
+      margin-right: 0; /* Remove espaçamento horizontal */
+    }
+  
+    .social-media {
+      margin-top: 10px; /* Adiciona espaçamento superior para separar dos itens do menu */
+      justify-content: center; /* Centraliza os ícones sociais */
+    }
+  
+    .social-item {
+      margin-top: 10px; /* Ajusta a posição vertical dos ícones sociais */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-item {
+      font-size: 14px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+  
+    .social-item {
+      margin-left: 10px; /* Reduz o espaçamento entre ícones sociais em telas pequenas */
+      margin-top: 5px; /* Ajusta a posição vertical dos ícones sociais */
+    }
+  
+    .social-item a {
+      font-size: 20px; /* Ajusta o tamanho dos ícones sociais */
+    }
+  }
+  
