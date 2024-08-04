@@ -1,0 +1,21 @@
+.carousel-container {
+    max-width: 1440px; /* Set your desired max width */
+    margin: auto; /* Center the carousel */
+  }
+  
+  .carousel-container .carousel .carousel-item img {
+    max-width: 100%; /* Ensure images don't overflow the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 20px 20px; /* Adjust size of control icons */
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+  }
+  
